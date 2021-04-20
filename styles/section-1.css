@@ -1,0 +1,62 @@
+.section-1 {
+  width: 100%;
+  margin: 73px 0px 0 0px;
+  padding: 0 16px 0 16px;
+}
+
+.section-1 h1 {
+  color: #060A24;
+  font-size: 36px;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.section-1 .line {
+  text-decoration: line-through;
+  padding: 0px 10px 0px 10px;
+}
+
+.section-1 p {
+  width: 100%;
+  font-size: 14px;
+  font-family: "IBM Plex Mono", monospace;
+  line-height: 22px;
+  margin-top: 16px;
+}
+
+.section-1 .btn {
+  margin-top: 36px;
+}
+
+.section-1 .desktop-text {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .section-1 {
+    width: 100%;
+    max-height: 100%;
+    padding: 120px 200px 0px 200px;
+  }
+  .section-1 p {
+    width: 628px;
+    height: 48px;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 16px;
+    margin-top: 16px;
+  }
+  .section-1 h1 {
+    font-size: 64px;
+  }
+  .section-1 .blue-dot {
+    color: #0000EC;
+  }
+  .section-1 .desktop-text {
+    display: unset;
+  }
+}
+/*# sourceMappingURL=section-1.css.map */

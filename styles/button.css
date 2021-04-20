@@ -1,0 +1,52 @@
+.btn {
+  width: 288px;
+  height: 48px;
+  background-color: #00F3BB;
+  border: none;
+  font-family: "IBM Plex Mono", monospace;
+  color: #060A24;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.btn:hover {
+  background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+  color: #FFFFFF;
+}
+
+@media screen and (min-width: 800px) {
+  .btn {
+    width: 226px;
+    height: 56px;
+    font-size: 18px;
+    padding: 16px 59px;
+  }
+}
+
+.btn-2 {
+  width: 288px;
+  height: 48px;
+  background-color: #00F3BB;
+  padding: 13px 43px 13px 43px;
+  border: none;
+  font-family: "IBM Plex Mono", monospace;
+  color: #060A24;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.btn-2:hover {
+  background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+  color: #FFFFFF;
+}
+
+@media screen and (min-width: 800px) {
+  .btn-2 {
+    width: 345px;
+    height: 56px;
+    font-size: 18px;
+    padding: 16px 59px;
+  }
+}
+/*# sourceMappingURL=button.css.map */

@@ -1,0 +1,137 @@
+header {
+  width: 100%;
+  height: 44px;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+}
+
+.logo {
+  height: 24px;
+  width: 24px;
+  margin-left: 10px;
+}
+
+/* empieza menu hamburguesa*/
+#toggle {
+  display: none;
+}
+
+#toggle:checked ~ .hamburger-menu i::before {
+  content: '\f00d';
+}
+
+#toggle:checked ~ .text-menu {
+  height: 224px;
+}
+
+.text-menu {
+  height: 0px;
+  width: 100%;
+  overflow: hidden;
+  -webkit-transition: height 0.5s ease-out;
+  transition: height 0.5s ease-out;
+  position: absolute;
+  top: 2.75rem;
+  right: 0;
+  background-color: #0000EC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.text-menu a {
+  color: white;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1rem;
+  margin-left: 1.1%;
+}
+
+.hamburger-menu {
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 800px) {
+  header {
+    width: 100%;
+    padding: 22px 100px 22px 100px;
+    height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 0;
+    position: relative;
+  }
+  .logo {
+    height: 36px;
+    width: 36px;
+    margin-left: 0px;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+  nav {
+    padding: 0;
+    margin-right: 0px;
+    height: 28px;
+    width: 50%;
+  }
+  .text-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 28px;
+    width: 100%;
+    top: 0;
+    -webkit-transition: none;
+    transition: none;
+    position: relative;
+    background-color: white;
+  }
+  .text-menu a {
+    font-size: 16px;
+    color: #060A24;
+  }
+  .text-menu a:hover {
+    color: #00F3BB;
+    text-decoration: line-through;
+  }
+  .text-menu a:hover:active {
+    color: #460f46;
+    text-decoration: line-through;
+  }
+}
+/*# sourceMappingURL=menu.css.map */

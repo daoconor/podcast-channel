@@ -1,0 +1,50 @@
+@import "variables";
+
+.section-3{
+    margin: -95px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h3{
+        font-size: 36px;
+        color: $primary-font-family-color;
+        font-weight: 400;
+        margin:27px 16px 0 16px;
+    }
+    p{
+        line-height: 22px;
+        font-size: 14px;
+        color: $primary-font-family-color;
+        font-weight: 400;
+        font-family: $secondary-font-family;
+        
+    }
+    .section-3-p{
+        margin: 8px 16px 0 16px;
+    }
+    img{
+        height: 519px;
+        width: 360px;
+        z-index: 1;
+    }
+}
+
+@media screen and (min-width: 800px){
+    .section-3{
+        margin: -168px 0 0 0;
+        flex-direction: row;
+        align-items: center;
+        h3{
+            font-size: 48px;           
+        }
+        .section-3-text{
+            font-size: 16px;
+            margin: 0.6% 17.8% 0 0;
+        }
+        img{
+            height: 660px;
+            width: 457.6px;
+            margin: 0 4.3% 1.6% 13.9%;
+        }
+    }
+}
